@@ -1,0 +1,12 @@
+.button {
+  background-color: rgb(84, 132, 132);
+}
+
+.button-contact {
+  display: block; 
+  margin-top: 2px;
+}
+
+.info-button {
+  display: block;
+}

@@ -1,0 +1,22 @@
+---
+
+const buttons = [
+  { label: 'Button 1', href: '#' },
+  { label: 'Button 2', href: '#' },
+];
+
+import '../styles/Info.css';
+
+---
+
+<button class="button">I N F O</button>
+<div id="info" class="info-button">
+  <p>Estas infografias se realizaron por...</p>
+
+</div>
+
+{buttons.map(button => (
+  <a href={button.href} class="button-contact">{button.label}</a>
+))}
+
+

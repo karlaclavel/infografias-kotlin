@@ -1,18 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
+import Menu from '../components/Menu.astro';
+import Image from '../components/Image.astro';
+import Info from '../components/Info.astro';
 
 import '../styles/Index.css'
 ---
 
 <Layout title="Infografías Kotlin">
 	<main>
-		<Header></Header>
-		<Card
-			title="Practica 1"
-			body="Instalación y configuración de Kotlin: IntelliJ IDEA y Visual Studio Code"
-			img="/images/practica1.png"
-		/>
+		<div class="container">
+			<div class="menu">
+				<Menu />
+			</div>
+			<div class="image">
+				<Image 
+					img="/images/practica1.png"
+					alt="Practica1"/>
+			</div>
+			<div class="info">
+				<Info />
+			</div>
+		</div>
 	</main>
 </Layout>

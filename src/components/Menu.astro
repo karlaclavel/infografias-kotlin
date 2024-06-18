@@ -1,0 +1,16 @@
+---
+
+const menuItems = [
+  'Item 1', 
+  'Item 2', 
+  'Item 3', 
+  'Item 4'];
+
+import '../styles/Menu.css';
+
+---
+
+<h1>Menu</h1>
+<ul>
+  {menuItems.map(item => <li>{item}</li>)}
+</ul>
